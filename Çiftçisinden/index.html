@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css" integrity="sha512-L+sMmtHht2t5phORf0xXFdTC0rSlML1XcraLTrABli/0MMMylsJi3XA23ReVQkZ7jLkOEIMicWGItyK4CAt2Xw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css" integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="responsive-navbar">
+        <img src="https://cdn.discordapp.com/attachments/916018275039727757/1075086748889128970/image.png" alt="">
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/2048px-Hamburger_icon.svg.png" id="menu-toggle" style="width:60px !important; height:60px !important; border:1px solid gray; border-radius:50%; padding:10px;"></img>
+        </div>
+
+    </div>
+
+    <div id="collapse" class="animasyon">
+        <!-- <div class="konya">
+       <div class="content">	
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          </svg>
+          <b class="konya-b">Konya</b>
+       </div>
+    </div> -->
+
+        <div class="dropdown" style="width:200px; display:flex;">
+            <button style="width:200px !important;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <svg style="margin-bottom:5px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg>
+                  <b class="konya-b">Konya</b>
+        </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg> 
+            İstanbul 
+            </a>
+                <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg> 
+            Bursa
+            </a>
+                <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg> 
+            Kocaeli
+            </a>
+            </div>
+        </div>
+        <br>
+        <div class="search-bar">
+            <input class="search-bar-input" type="text" placeholder="Aramak İstediğini Buraya Yazabilirsin">
+        </div>
+        <div class="tum-kategoriler">
+            <button class="tk-button" href="">Tüm Kategoriler <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        </button>
+        </div>
+        <div class="icavd">
+            <a href="">İlgi Çeken Alanlar Ve Daha Fazlası</a>
+        </div>
+
+
+
+
+        <div class="giris">
+            <a href="">Giriş</a>
+        </div>
+        <div class="kayit-ol">
+            <a href="">Ücretsiz KAYIT OL</a>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="app-navbar">
+        <div class="navbar-1">
+            <img src="https://cdn.discordapp.com/attachments/916018275039727757/1075086748889128970/image.png" alt="">
+        </div>
+        <div class="navbar-2">
+            <div class="navbar-2-menu-1">
+                <div id="konya" class="konya">
+                    <div class="content">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                          </svg>
+
+                        <b class="konya-b">Konya</b>
+                        <svg style="width:18px !important; height:18px !important; margin-left:5px; margin-top:6px;" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-double-down" id="icon-content" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                          </svg>
+                    </div>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          </svg> İstanbul</a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          </svg> Bursa</a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          </svg> Kocaeli</a>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="search-bar">
+                    <input class="search-bar-input" type="text" placeholder="Aramak İstediğini Buraya Yazabilirsin">
+                </div>
+            </div>
+            <div class="box-shadow"></div>
+            <div class="navbar-2-menu-2">
+
+
+                <div class="tum-kategoriler">
+                    <button class="tk-button" href="#">Tüm Kategoriler 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                      <div id="myDropdown2" class="dropdown-content2">
+                       <div class="menu">
+                        <a href="#about">Süt ve Süt Ürünleri</a>
+                        <a href="#base">Doğal Ürünler</a>
+                        <a href="#blog">Hayvansal Ürünler</a>
+                        <a href="#contact">Deniz Mahsülleri</a>
+                       </div>
+                       <div class="menu">
+                        <a href="#custom">Kompostolar</a>
+                        <a href="#support">Yağlar</a>
+                        <a href="#tools">Küçük Baş Hayvanlar</a>
+                        <a href="#tools">Büyük Baş Hayvanlar</a>
+                       </div>
+                        <div class="menu">
+                            <a href="#tools">Hayvansal Et Ürünleri</a>
+                        <a href="#tools">Hayvanlar İçin Yem</a>
+                        <a href="#tools">Meyve ve Sebze Tohumları</a>
+                        <a href="#tools">Reçel Çeşitleri</a>
+                        </div>
+                      </div>
+                      
+                    </button>
+
+                </div>
+                <div class="icavd">
+                    <a href="">İlgi Çeken Alanlar Ve Daha Fazlası</a>
+                </div>
+                <div class="giris">
+                    <a href="">Giriş</a>
+                </div>
+                <div class="kayit-ol">
+                    <a href="">Ücretsiz KAYIT OL</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="header-all">
+            <div class="triangle"></div>
+            <div class="header-1">
+                <p>Üreticiden <br> Tüketiciye <br> Memnuniyetle</p>
+            </div>
+        </div>
+        <div class="header-all">
+            <div class="header-2">
+                <div class="header2-position">
+                    <p class="p-1">Hemen Sende</p>
+                    <a href="" class="ilan-olustur">
+                Ücretsiz İlanını Oluştur
+            </a>
+                    <p class="p-2">Alıcılar Başında <br> Koşmaya Başlasın</p>
+                </div>
+            </div>
+            <div class="triangle2"></div>
+        </div>
+
+
+    </div>
+
+    <div class="triangle3"></div>
+    <div class="triangle4"></div>
+
+
+
+    <br>
+    <br>
+
+    <div class="filtre">
+
+        <div class="kategoriler">
+
+            <form action="">
+                <div class="accordion">
+                    <h3 class="text-left">Sıralama Ölçütü</h1>
+                        <div class="item">
+                            <input type="checkbox" name="test">
+                            <div class="title">
+                                <i class="fa fa-caret-right"></i> Önce Düşük Fiyatlı
+                            </div>
+                            <div class="content">
+                                Lorem Ipsum
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" name="test">
+                            <div class="title">
+                                <i class="fa fa-caret-right"></i> Önce Yüksek Fiyatlı
+                            </div>
+                            <div class="content">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" name="test">
+                            <div class="title">
+                                <i class="fa fa-caret-right"></i> Önce En Yeni İlan
+                            </div>
+                            <div class="content">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" name="test">
+                            <div class="title">
+                                <i class="fa fa-caret-right"></i> Önce En Eski İlan
+                            </div>
+                            <div class="content">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" name="test">
+                            <div class="title">
+                                <i class="fa fa-caret-right"></i> Başlığa Göre [A-Z]
+                            </div>
+                            <div class="content">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" name="test">
+                            <div class="title">
+                                <i class="fa fa-caret-right"></i> Başlığa Göre [Z-A]
+                            </div>
+                            <div class="content">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                        </div>
+
+                </div>
+            </form>
+        </div>
+
+
+        <div class="urunler" style="display:flex;">
+
+            <div class="row" style="margin-top:25px;">
+                <!-- <h3>Filtrelenmiş Ürünler</h3> -->
+                <br><br>
+                <div class="col-lg-3">
+                    <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+                    <a href="">Alibabanın Koyunları</a>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+                    <a href="">Alibabanın Koyunları</a>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+                    <a href="">Alibabanın Koyunları</a>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+                    <a href="">Alibabanın Koyunları</a>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+                    <a href="">Alibabanın Koyunları</a>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+                    <a href="">Alibabanın Koyunları</a>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+                    <a href="">Alibabanın Koyunları</a>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+                    <a href="">Alibabanın Koyunları</a>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+                    <a href="">Alibabanın Koyunları</a>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+                    <a href="">Alibabanın Koyunları</a>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+                    <a href="">Alibabanın Koyunları</a>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+                    <a href="">Alibabanın Koyunları</a>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+                    <a href="">Alibabanın Koyunları</a>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+                    <a href="">Alibabanın Koyunları</a>
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+                    <a href="">Alibabanın Koyunları</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="responsive-card">
+        <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+        <a href="">Alibabanın Koyunları</a>
+    </div>
+    <div class="responsive-card">
+        <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+        <a href="">Alibabanın Koyunları</a>
+    </div>
+    <div class="responsive-card">
+        <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+        <a href="">Alibabanın Koyunları</a>
+    </div>
+    <div class="responsive-card">
+        <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+        <a href="">Alibabanın Koyunları</a>
+    </div>
+    <div class="responsive-card">
+        <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+        <a href="">Alibabanın Koyunları</a>
+    </div>
+    <div class="responsive-card">
+        <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+        <a href="">Alibabanın Koyunları</a>
+    </div>
+    <div class="responsive-card">
+        <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+        <a href="">Alibabanın Koyunları</a>
+    </div>
+    <div class="responsive-card">
+        <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+        <a href="">Alibabanın Koyunları</a>
+    </div>
+    <div class="responsive-card">
+        <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+        <a href="">Alibabanın Koyunları</a>
+    </div>
+    <div class="responsive-card">
+        <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+        <a href="">Alibabanın Koyunları</a>
+    </div>
+    <div class="responsive-card">
+        <img src="https://www.yabanihayvanlar.com/wp-content/uploads/2021/08/koyun.jpg" alt="">
+        <a href="">Alibabanın Koyunları</a>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
